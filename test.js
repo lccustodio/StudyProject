@@ -27,7 +27,7 @@ const collectUserData = () => {
     rl.question('Enter your name: ', (name) => {
         userData.name = name;
 
-        rl.question('Enter your CPF (11 digits): ', (cpf) => {
+        rl.question('Enteeeer your CPF (11 digits): ', (cpf) => {
             if (!validateCPF(cpf)) {
                 console.log('Invalid CPF. Please use 11 digits.');
                 rl.close();
